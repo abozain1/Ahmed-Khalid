@@ -1,0 +1,54 @@
+.form {
+  background-color: rgb(24, 32, 44);
+  width: 30rem;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 2vw 2vw 2vh 2vw;
+  border-radius: 20%;
+}
+.headline {
+  color: white;
+  margin-left: 37%;
+}
+.headlinetext {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.headlinetext:hover {
+  /* border-bottom: 1px solid rgb(79,195,247); */
+  color: rgb(79, 195, 247);
+}
+.forminput {
+  margin: 1vh 1vw 1vh 1vw;
+  color: white;
+}
+.forminputholder {
+  display: flex;
+}
+.forminput2 {
+  margin: 2vh 1vw 2vh 1vw;
+  color: white;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  margin-left: 42%;
+}
+.btn:hover {
+  background-color: rgb(79, 195, 247);
+  color: black;
+}
+.invalid {
+  background-color: red;
+  color: black;
+  display: block;
+}
+.disable {
+  background-color: #cccccc;
+  color: #666666;
+}
+.disable:hover {
+  background-color: #cccccc;
+  color: #666666;
+}

@@ -1,0 +1,36 @@
+.entryHolder {
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+.body {
+  padding: 2rem;
+  
+}
+.statics {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.formHolder {
+  margin-left: 40%;
+  margin-top: 2rem;
+}
+.title {
+  position: absolute;
+  top: 5vh;
+  right: 11%;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.logOuta {
+  position: absolute;
+  top: 1vh;
+  right: 49%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.logOuta:hover {
+  background-color: rgb(94, 88, 88);
+}
