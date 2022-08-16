@@ -2,13 +2,13 @@ import cls from "./Components.module.scss";
 const EntryComp = ({ ele, onDelete, isAdmin, openUpdate }) => {
   const admin = isAdmin == "true" || isAdmin == true;
   return (
-    <div className={cls.entryMain}>
-      <p>{ele.ownerName}</p>
-      <p>{ele.food}</p>
-      <p>{ele.timeConsumed}</p>
-      <p>Calories : {ele.calorie}</p>
-      <p>Price : {ele.price}</p>
-      {admin && <button  onClick={onDelete}>delete</button>}
+    <div className={admin?cls.entryMain:cls.entryMain1}>
+      <p className={cls.name}>Name : {ele.ownerName}</p>
+      <p className={cls.food}>Food :  {ele.food}</p>
+      <p className={cls.time}>{ele.timeConsumed}</p>
+      <p className={cls.calorie}>Calories : {ele.calorie}</p>
+      <p className={cls.price}>Price : {ele.price}</p>
+      {admin && <button onClick={onDelete}>delete</button>}
       {admin && <button onClick={openUpdate}>edit</button>}
     </div>
   );

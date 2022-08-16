@@ -2,15 +2,22 @@
   max-width: 90%;
   margin: auto;
   margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 .body {
   padding: 2rem;
-  
 }
 .statics {
   position: absolute;
   top: 20%;
-  left: 5%;
+}
+.statics p {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.statics span {
+  font-size: 2rem;
+  color: red;
 }
 .formHolder {
   margin-left: 40%;
@@ -18,19 +25,30 @@
 }
 .title {
   position: absolute;
-  top: 5vh;
-  right: 11%;
-  font-size: 1rem;
+  top: 2.5rem;
+  right: 49%;
+  font-size: 2rem;
   font-weight: bolder;
+}
+.title1 {
+  position: absolute;
+  left: 3%;
+  font-size: 2rem;
+  font-weight: bolder;
+  color:rgb(163, 163, 114) ;
 }
 .logOuta {
   position: absolute;
-  top: 1vh;
-  right: 49%;
+  top: 3rem;
+  right: 5%;
   background-color: black;
   color: white;
   border-radius: 5px;
 }
 .logOuta:hover {
   background-color: rgb(94, 88, 88);
+}
+.filter {
+  width: 20rem;
+  height: 10rem;
 }

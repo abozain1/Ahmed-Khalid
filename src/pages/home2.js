@@ -180,7 +180,7 @@ const Homepage2 = () => {
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <div className={cls.body}>
-        <p className={cls.title}>{name}</p>
+        <p className={admin ? cls.title1 : cls.title}>{name}</p>
         <button
           className={cls.logOuta}
           onClick={() => dispatch(userActions.logout())}
@@ -189,15 +189,28 @@ const Homepage2 = () => {
         </button>
         {admin && (
           <div className={cls.statics}>
-            <p> this Week Entries : {thisWeekEntries} </p>
-            <p>Past Week Entries : {pastWeekEntries} </p>
+            <p>
+              {" "}
+              this Week Entries : <span>{thisWeekEntries}</span>{" "}
+            </p>
+            <p>
+              Past Week Entries :<span> {pastWeekEntries}</span>{" "}
+            </p>
             <p>
               Average Calorie :{" "}
-              {avgWeekcalorie >= 0 ? Math.round(avgWeekcalorie) : 0}{" "}
+              <span style={{ maxWidth: "2rem", overFlow: "hidden" }}>
+                {" "}
+                {avgWeekcalorie >= 0 ? Math.round(avgWeekcalorie) : 0}{" "}
+              </span>
             </p>
           </div>
         )}
-        {!admin && <Datefilter changeDate={setDateArr} />}
+        {!admin && (
+          <div className={cls.filter}>
+            {" "}
+            <Datefilter changeDate={setDateArr} />
+          </div>
+        )}
         <div className={cls.formHolder}>
           <EntryForm onSubmit={AddEntry} />
         </div>

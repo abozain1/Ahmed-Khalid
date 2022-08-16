@@ -67,7 +67,7 @@ export const Registerpage = () => {
   };
   const passvalidation = () => {
     const pass = enteredpass.current.value;
-    const passvalid = pass.match(/^\d{4,}$/);
+    const passvalid = pass.match(/^\d{4,15}$/);
     if (!passvalid) {
       setpassisvalid({
         input: false,
